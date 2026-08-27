@@ -9,7 +9,7 @@
 
 <link rel="stylesheet" href="css/style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
 
@@ -32,26 +32,27 @@
 </nav>
 
 <div class="live">
-EN VIVO
+    ● EN VIVO
 </div>
 
 </header>
 
 <section class="hero" id="inicio">
 
-<div class="hero-content">
+<div class="hero-overlay">
 
 <h1>MEDIOS DE COMUNICACIÓN</h1>
 
 <h2>RIO RISE</h2>
 
 <p>
-Información oficial, entrevistas exclusivas y cobertura en directo de los acontecimientos más importantes de la ciudad.
+Información, entrevistas, coberturas especiales y transmisiones oficiales para toda la ciudad.
 </p>
 
 <div class="hero-buttons">
 
-<a href="#noticias">Ver Noticias</a>
+<a href="#noticias">Noticias</a>
+
 <a href="#transmisiones">Transmisiones</a>
 
 </div>
@@ -62,24 +63,11 @@ Información oficial, entrevistas exclusivas y cobertura en directo de los acont
 
 <section id="noticias" class="section">
 
-<h2>Noticias Destacadas</h2>
+<h2>Noticias</h2>
 
-<div class="cards">
+<div class="empty-news">
 
-<div class="card">
-<h3>Última Hora</h3>
-<p>Próximamente noticias oficiales de Rio Rise.</p>
-</div>
-
-<div class="card">
-<h3>Entrevistas</h3>
-<p>Coberturas y entrevistas exclusivas a ciudadanos y autoridades.</p>
-</div>
-
-<div class="card">
-<h3>Eventos</h3>
-<p>Seguimiento de los eventos más importantes de la ciudad.</p>
-</div>
+📰 Próximamente se publicarán noticias oficiales de Medios de Comunicación Rio Rise.
 
 </div>
 
@@ -89,10 +77,12 @@ Información oficial, entrevistas exclusivas y cobertura en directo de los acont
 
 <h2>Transmisiones</h2>
 
-<div class="transmission-box">
+<div class="transmission-card">
+
+<h3>Centro de Transmisiones</h3>
 
 <p>
-Las transmisiones oficiales aparecerán aquí.
+Las transmisiones oficiales, entrevistas y reportajes aparecerán aquí.
 </p>
 
 </div>
@@ -101,17 +91,54 @@ Las transmisiones oficiales aparecerán aquí.
 
 <section id="equipo" class="section">
 
-<h2>Equipo</h2>
+<h2>Equipo de Trabajo</h2>
 
-<div class="director-card">
+<div class="team-grid">
 
+<div class="team-card director">
+<h3>Sebastian_Ceballosr</h3>
+<span>Director (Rango 6)</span>
+</div>
+
+<div class="team-card jefe">
+<h3>Leyla_Anime</h3>
+<span>Editor Jefe (Rango 5)</span>
+</div>
+
+<div class="team-card">
+<h3>Jazmin Sar</h3>
+<span>Editor (Rango 4)</span>
+</div>
+
+<div class="team-card">
+<h3>Enzopau_Rovirapastor</h3>
+<span>Editor (Rango 4)</span>
+</div>
+
+<div class="team-card">
+<h3>Oliverjan_Torresvillar</h3>
+<span>Editor Junior (Rango 3)</span>
+</div>
+
+<div class="team-card">
 <h3>Giancarlo Cardone</h3>
+<span>Jornalista (Rango 2)</span>
+</div>
 
-<span>Director</span>
+<div class="team-card">
+<h3>Drr_Dreww</h3>
+<span>Jornalista (Rango 2)</span>
+</div>
 
-<p>
-Responsable de la dirección general de Medios de Comunicación.
-</p>
+<div class="team-card">
+<h3>Angell_Cruz</h3>
+<span>Estagiario (Rango 1)</span>
+</div>
+
+<div class="team-card">
+<h3>Manuelmarkel_Montesbos</h3>
+<span>Estagiario (Rango 1)</span>
+</div>
 
 </div>
 
@@ -121,16 +148,24 @@ Responsable de la dirección general de Medios de Comunicación.
 
 <h2>Contacto</h2>
 
-<form>
+<p class="contact-text">
+¿Tienes una noticia, denuncia o información relevante? Contáctanos.
+</p>
 
-<input type="text" placeholder="Nombre">
+<form action="https://formsubmit.co/TU_CORREO_AQUI@gmail.com" method="POST">
 
-<input type="email" placeholder="Correo">
+<input type="text" name="nombre" placeholder="Nombre" required>
 
-<textarea placeholder="Mensaje"></textarea>
+<input type="email" name="email" placeholder="Correo Electrónico" required>
+
+<textarea name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+
+<input type="hidden" name="_subject" value="Nuevo mensaje desde Medios de Comunicación">
+
+<input type="hidden" name="_captcha" value="false">
 
 <button type="submit">
-Enviar
+Enviar Mensaje
 </button>
 
 </form>
