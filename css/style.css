@@ -307,3 +307,39 @@ padding:90px 20px;
 }
 
 }
+.news-card{
+max-width:1000px;
+margin:auto;
+background:#0B245F;
+padding:40px;
+border-radius:20px;
+}
+
+.news-category{
+display:inline-block;
+background:#D91E2F;
+padding:8px 15px;
+border-radius:50px;
+font-size:12px;
+font-weight:700;
+margin-bottom:20px;
+}
+
+.news-card h3{
+font-size:32px;
+margin-bottom:20px;
+}
+
+.news-card p{
+font-size:18px;
+line-height:1.8;
+margin-bottom:25px;
+}
+
+.news-info{
+display:flex;
+gap:25px;
+flex-wrap:wrap;
+font-weight:600;
+color:#9fc2ff;
+}
