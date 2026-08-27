@@ -1,9 +1,1 @@
-console.log("Rio Rise News Online");
-
-const live = document.querySelector('.live');
-
-setInterval(() => {
-
-live.classList.toggle('pulse');
-
-},1000);
+console.log("Medios de Comunicación Rio Rise Online");
